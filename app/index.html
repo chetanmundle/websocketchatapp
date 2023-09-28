@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="ml-96 mt-6">
+      <div class="border border-red-500 h-96 w-96 overflow-y-scroll p-4">
+        <ul></ul>
+
+      </div>
+        <div class="mt-2 grid w-96 grid-cols-4 gap-2">
+          <input placeholder="message" class="col-span-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="textinput" />
+          <button class="bg-green-400" >Send</button>
+        </div>
+      
+    </div>
+  </body>
+</html>
